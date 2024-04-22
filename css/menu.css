@@ -1,0 +1,49 @@
+/* css/menu.css */
+
+/* css/menu.css */
+
+.top-menu {
+    display: flex;
+    align-items: center; 
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px; 
+}
+
+.top-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.top-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.top-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s; /* Transición para el cambio de color */
+    margin-left: 10px; /* Separación adicional entre palabras y logo */
+}
+
+.top-menu ul li a:hover {
+    text-decoration: underline;
+    color: blue; /* Cambia el color a azul al pasar el cursor */
+}
+
+.menu-icon {
+    margin-right: 150px; 
+    vertical-align: middle; 
+}
+
+.navbar-brand img {
+    height: 50px;
+    padding: 5px;
+}

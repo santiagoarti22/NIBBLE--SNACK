@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <style>
+        body {
+            background-color: var(--body-bg-color);
+            color: var(--text-light-gray);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        .section:not(:last-child) {
+            border-bottom: none;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1000px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .box {
+            flex: 1 0 calc(50% - 20px);
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        @media(max-width: 575px) {
+            .section {
+                padding: 30px 0;
+            }
+
+            .box {
+                flex: 1 0 calc(100% - 20px);
+            }
+        }
+    </style>
+    <link rel="icon" href="icon/icono.ico" type="image/x-icon">
+    <script src="menu.js"></script>
+    <title>Acerca de Nosotros</title>
+</head>
+
+<body>
+    <nav class="top-menu">
+        <ul>
+            <a class="navbar-brand" href="#">
+                <img src="icon/icono.ico" alt="Logo">
+            </a>
+            <li><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="signup.html">Registrarse</a></li>
+            <li><a href="signup.html">Cerrar Sesion</a></li>
+        </ul>
+    </nav>
+    <section class="section">
+        <div class="form-content">
+            <div class="box">
+                <h3>PROBLEMATICA</h3>
+                <p>Este proyecto surge de la misma problemática experimentada por muchos dueños de mascotas la necesidad de asegurar una alimentación adecuada y constante para sus mascotas, especialmente en entornos donde los horarios ocupados o impredecibles pueden dificultar la atención diaria. La falta de flexibilidad en la rutina diaria, combinada con la preocupación constante por la calidad del agua que consumen las mascotas, ha creado una brecha en el cuidado y bienestar de estos animales.</p>
+            </div>
+            <div class="box">
+                <h3>NUESTRO ALCANCE</h3>
+                <p>El alcance del proyecto abarca el diseño y desarrollo de un dispensador inteligente de alimentos y agua para mascotas utilizando una Raspberry Pi como base tecnológica. La solución propuesta busca ofrecer una manera eficiente para que los propietarios gestionen la alimentación y el suministro de agua de sus mascotas, incluso en situaciones de ausencia física. </p>
+            </div>
+            <div class="box">
+                <h3>METODOLOGÍA</h3>
+                <p>Se usó Scrum para gestionar el proyecto con flexibilidad y adaptabilidad, mediante entregas iterativas y ajustes constantes, útil para cambios en diseño, requisitos o alcance.</p>
+            </div>
+            <div class="box">
+                <h3>RESULTADOS</h3>
+                <p>------------------------------------</p>
+            </div>
+            <!-- Cajas adicionales -->
+            <div class="box">
+                <h3>Video Publicitario</h3>
+                <center>
+                    <a href="https://drive.google.com/file/d/141DqxZHgxLrUdOGXYJydpgntvz9jrjHG/view?usp=sharing" target="_blank">
+                        <img src="icon/icono.ico" alt="Video Publicitario" width="200" height="150">
+                        <p style="color: white;">Da click para ver</p>
+                    </a>
+                </center> 
+            </div>
+            <div class="box">
+                <h3>Video explicativo del proyecto funcional</h3>
+                <center>
+                    <a href="https://drive.google.com/file/d/141DqxZHgxLrUdOGXYJydpgntvz9jrjHG/view?usp=sharing" target="_blank">
+                        <img src="icon/icono.ico" alt="Video Publicitario" width="200" height="150">
+                        <p style="color: white;">Da click para ver</p>
+                    </a>
+                </center> 
+            </div>
+            
+            
+            <div class="box">
+                <h3>APLICACION</h3>
+                <p>Pagina principal de la aplicacion</p>
+                <center><img src="icon/Nbb.jpg" alt="Video Publicitario" width="200" height="350"></a></center> 
+
+            </div>
+            <div class="box" style="margin-left: auto; margin-right: auto;">
+                <h3>APLICACION</h3>
+                <p>Asignar horarios</p>
+                <center><img src="icon/ah.jpg" alt="Aplicacion" width="200" height="350"></a></center>
+            </div>
+            <div class="box" style="margin-left: auto; margin-right: auto;">
+                <h3>APLICACION</h3>
+                <p>Rellenar horarios</p>
+                <center><img src="icon/rl.jpg" alt="Aplicacion" width="200" height="350"></a></center>
+            </div>
+            <div class="box" style="margin-left: auto; margin-right: auto;">
+                <h3>Prototipo</h3>
+                <p>Prototipo del proyecto</p>
+                <center><img src="icon/NIBBLE SNAKE.jpg" alt="Aplicacion" width="250" height="200"></a></center>
+            </div>
+        </div>
+        <div class="box" style="margin-left: auto; margin-right: auto;">
+           <CENTER> <h3>EQUIPO DE TRABAJO</h3></CENTER>
+            <center><img src="icon/EQUIPO.png" alt="Aplicacion" width="850" height="800"></a></center>
+
+        </div>
+     </div>
+     <div class="box" style="margin-left: auto; margin-right: auto;">
+        <CENTER><h3>POSTER</h3></center>
+        <center><img src="icon/POSTER.png" alt="Aplicacion" width="850" height="800"></a></center>
+
+     </div>
+     </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css"> 
+    <link rel="icon" href="icon/icono.ico" type="image/x-icon">
+
+    <script src="menu.js"></script>
+    <title>Iniciar Sesion</title>
+</head>
+
+<body>
+    <nav class="top-menu"> 
+        <ul>
+            <a class="navbar-brand" href="#">
+                <img src="icon/icono.ico" alt="Logo"> 
+            </a>
+            <li><a href="signup.html">Acerca de Nosotros</a></li>
+            <li><a href="index.html">Registrarse</a></li>
+            <li><a href="signup.html">Iniciar Sesion</a></li>
+
+        </ul>
+    </nav>
+    <section class="form-main">
+        <div class="form-content">
+            <h3>BIENVENIDO A NIBBLE-SANCK</h3> 
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="box">
+                <div class="form">
+                    <form>
+                        <div class="input-box">
+                            <input type="text" id="username" class="input-control" placeholder="Usuario" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" id="email" class="input-control" placeholder="E-mail" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" id="password" class="input-control" placeholder="Contraseña" required>
+                        </div>
+                        <button type="button" id="submit" class="btn">Registrar</button>
+                    </form>
+                </div>
+                <p>Ya tienes una cuenta? <a href="signup.html" class="gradient-text">Iniciar sesión </a></p>
+            </div>
+        </div>
+    </section>
+  
+    <script type="module">
+        
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+  import { getDatabase, ref, set, get, child  } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
+
+  
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCYVz9MPlmL1Uk8BN7IkaKBlWzKRGRTTy4",
+    authDomain: "nibblesnack-150a5.firebaseapp.com",
+    projectId: "nibblesnack-150a5",
+    storageBucket: "nibblesnack-150a5.appspot.com",
+    messagingSenderId: "22716778303",
+    appId: "1:22716778303:web:6ca6ad4ee745bf8331b58a"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  // get ref to database services
+  const db = getDatabase(app);
+  document.getElementById("submit").addEventListener('click', function(e){
+    e.preventDefault();
+    set(ref(db, 'user/' + document.getElementById("username").value),{
+        username: document.getElementById("username").value,
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value,
+
+    } );
+    alert("!Usuario Registrado¡")
+    
+  })
+
+    </script>
+      <script src="script.js"></script>
+      
+</body>
+
+</html>
